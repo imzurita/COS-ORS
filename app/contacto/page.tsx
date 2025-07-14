@@ -65,8 +65,13 @@ export default function ContactoPage() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Teléfono</h3>
                     <p className="text-gray-600">
-                      <a href="tel:+34674775757" className="hover:text-corporate-red transition-colors">
-                        +34 674 77 57 57
+                      <a href="tel:+34692682050" className="hover:text-corporate-red transition-colors">
+                        +34 692 682 050
+                      </a>
+                    </p>
+                    <p className="text-gray-600">
+                      <a href="tel:+34656 944 757" className="hover:text-corporate-red transition-colors">
+                        +34 656 944 757
                       </a>
                     </p>
                   </div>
@@ -79,8 +84,8 @@ export default function ContactoPage() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                     <p className="text-gray-600">
-                      <a href="mailto:xcsgrup@gmail.com" className="hover:text-corporate-red transition-colors">
-                        xcsgrup@gmail.com
+                      <a href="mailto:info@cos-ors.com" className="hover:text-corporate-red transition-colors">
+                        info@cos-ors.com
                       </a>
                     </p>
                   </div>
@@ -130,7 +135,7 @@ export default function ContactoPage() {
             <div className="bg-white p-4 rounded-2xl shadow-sm">
               <div className="aspect-video bg-gray-200 rounded-xl flex items-center justify-center">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.8234567890123!2d2.6789012345678!3d41.6234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDM3JzI0LjQiTiAywrA0MCc0NC4wIkU!5e0!3m2!1ses!2ses!4v1234567890123!5m2!1ses!2ses"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2865.91163827077!2d2.6849738!3d41.625222799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bb39396691d761%3A0x2492e10e6bccab07!2sAv.%20Ntra.%20Sra.%20de%20Montserrat%2C%2053%2C%2008397%20Pineda%20de%20Mar%2C%20Barcelona!5e1!3m2!1sca!2ses!4v1752245924935!5m2!1sca!2ses"
                   width="100%"
                   height="100%"
                   style={{ border: 0, borderRadius: "0.75rem" }}

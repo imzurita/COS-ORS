@@ -191,7 +191,7 @@ export default function ServiciosPage() {
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Link
                     href="/contacto"
-                    className="group bg-gradient-to-r from-corporate-red-600 to-corporate-red-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-coral-500/25 hover:scale-105 inline-flex items-center justify-center"
+                    className="group bg-white/80 backdrop-blur-sm text-corporate-red-600 px-8 py-4 rounded-2xl font-semibold text-lg border-2 border-coral-200 transition-all duration-300 hover:bg-white hover:shadow-xl hover:scale-105 inline-flex items-center justify-center"
                   >
                     Solicitar Presupuesto
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -414,8 +414,8 @@ export default function ServiciosPage() {
         <div className="absolute inset-0 bg-[url('/images/cosors9.jpg')] bg-cover bg-center opacity-10" />
         <div className="container-custom text-center relative z-10">
           <div className="max-w-3xl mx-auto space-y-8 fade-in">
-            <h2 className="text-white">¿Necesitas más información sobre nuestros servicios?</h2>
-            <p className="text-xl text-coral-100">
+            <h2 className="text-black">¿Necesitas más información sobre nuestros servicios?</h2>
+            <p className="text-xl text-corporate-black">
               Contacta con nosotros para recibir asesoramiento personalizado y un presupuesto adaptado a tu proyecto.
             </p>
             <Link
