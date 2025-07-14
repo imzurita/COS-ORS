@@ -25,7 +25,7 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-3">
             <div className="relative w-12 h-12 bg-corporate-gray rounded-lg p-2">
               <Image
-                src="/images/logo.svg"
+                src="/images/logo_cosors.png"
                 alt="COS&ORS TECNICS S.L. - Rehabilitación de Fachadas"
                 fill
                 className="object-contain"

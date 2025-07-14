@@ -29,19 +29,36 @@ export default function Footer() {
             <div className="space-y-2 text-sm text-gray-300">
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-1 text-corporate-red flex-shrink-0" />
-                <span>
+                <Link href="https://maps.app.goo.gl/ZXS4f4CTR7RNAkxG8" target="_blank" className="text-corporate-white hover:underline">
+                   <span>
                   Avinguda Montserrat 53
                   <br />
                   Pineda de Mar, Barcelona
                 </span>
+
+                </Link>
               </div>
               <div className="flex items-center space-x-2">
+
                 <Phone className="h-4 w-4 text-corporate-red" />
-                <span>+34 674 77 57 57</span>
+                <Link href="tel:+34656944757" target="_blank" className="text-corporate-white hover:underline">
+                 <span>+34 656 944 757</span>
+                </Link>
+
+                <Phone className="h-4 w-4 text-corporate-red" />
+                <Link href="tel:+34692682050" target="_blank" className="text-corporate-white hover:underline">
+                  <span>+34 692 682 050</span>
+                </Link>
+
               </div>
+
               <div className="flex items-center space-x-2">
+
+
                 <Mail className="h-4 w-4 text-corporate-red" />
-                <span>xcsgrup@gmail.com</span>
+                <Link href="mailto:info@cos-ors.com" target="_blank" className="text-corporate-white hover:underline">
+                  <span>info@cos-ors.com</span>
+                </Link>
               </div>
             </div>
           </div>

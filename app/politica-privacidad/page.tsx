@@ -12,26 +12,29 @@ export default function PoliticaPrivacidadPage() {
     <div className="section-padding bg-white">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto prose prose-lg">
-          <h1>Política de Privacidad</h1>
+          <h1 >Política de Privacidad</h1>
+
 
           <p className="text-gray-600">
             <strong>Última actualización:</strong> {new Date().toLocaleDateString("es-ES")}
           </p>
+          <h1 className="mb-8"></h1>
 
-          <h2>1. Responsable del Tratamiento</h2>
+          <h2 className="mb-3">1. Responsable del Tratamiento</h2>
           <p>
             <strong>COS & ORS TECNICS S.L.</strong>
             <br />
-            CIF: XXXXXXXXX
+            CIF: B22512503
             <br />
             Dirección: Avinguda Montserrat 53, 08397 Pineda de Mar, Barcelona
             <br />
             Teléfono: +34 674 77 57 57
             <br />
-            Email: xcsgrup@gmail.com
+            Email: info@cos-ors.com
           </p>
+          <h1 className="mb-8"></h1>
 
-          <h2>2. Finalidad del Tratamiento</h2>
+          <h2 className="mb-3">2. Finalidad del Tratamiento</h2>
           <p>Los datos personales que nos proporciones serán tratados con las siguientes finalidades:</p>
           <ul>
             <li>Gestionar y responder a tus consultas y solicitudes de presupuesto</li>
@@ -40,7 +43,9 @@ export default function PoliticaPrivacidadPage() {
             <li>Mejorar nuestros servicios y experiencia de usuario</li>
           </ul>
 
-          <h2>3. Base Legal</h2>
+          <h1 className="mb-8"></h1>
+
+          <h2 className="mb-3">3. Base Legal</h2>
           <p>El tratamiento de tus datos se basa en:</p>
           <ul>
             <li>Tu consentimiento explícito</li>
@@ -49,13 +54,17 @@ export default function PoliticaPrivacidadPage() {
             <li>Nuestro interés legítimo en mantener relaciones comerciales</li>
           </ul>
 
-          <h2>4. Conservación de Datos</h2>
+          <h1 className="mb-8"></h1>
+
+          <h2 className="mb-3">4. Conservación de Datos</h2>
           <p>
             Conservaremos tus datos personales durante el tiempo necesario para cumplir con las finalidades para las que
             fueron recogidos y, en cualquier caso, durante los plazos establecidos por la legislación aplicable.
           </p>
 
-          <h2>5. Derechos del Usuario</h2>
+          <h1 className="mb-8"></h1>
+
+          <h2 className="mb-3">5. Derechos del Usuario</h2>
           <p>Tienes derecho a:</p>
           <ul>
             <li>Acceder a tus datos personales</li>
@@ -67,16 +76,20 @@ export default function PoliticaPrivacidadPage() {
             <li>Revocar el consentimiento en cualquier momento</li>
           </ul>
 
-          <h2>6. Seguridad</h2>
+          <h1 className="mb-8"></h1>
+
+          <h2 className="mb-3">6. Seguridad</h2>
           <p>
             Implementamos medidas técnicas y organizativas apropiadas para proteger tus datos personales contra el
             acceso no autorizado, alteración, divulgación o destrucción.
           </p>
 
-          <h2>7. Contacto</h2>
+          <h1 className="mb-8"></h1>
+
+          <h2 className="mb-3">7. Contacto</h2>
           <p>
             Para ejercer tus derechos o resolver cualquier duda sobre esta política, puedes contactarnos en:
-            xcsgrup@gmail.com
+            info@cos-ors.com
           </p>
 
           <p>
