@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
@@ -8,7 +8,17 @@ import { Menu, X } from "lucide-react"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isAtTop, setIsAtTop] = useState(true)
   const pathname = usePathname()
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsAtTop(window.scrollY === 0)
+    }
+    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const navigation = [
     { name: "Inicio", href: "/" },
@@ -17,25 +27,30 @@ export default function Header() {
     { name: "Contacto", href: "/contacto" },
   ]
 
+  const handleHomeClick = (e: React.MouseEvent) => {
+    if (location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setIsMenuOpen(false); // Cierra menú móvil si está abierto
+    }
+  };
+
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header
+      className={`sticky top-0 z-50 transition-colors duration-300 ${
+        isAtTop ? 'bg-transparent shadow-none' : 'bg-white shadow-sm'
+      }`}
+    >
       <nav className="container-custom">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center min-h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="relative w-12 h-12 bg-corporate-gray rounded-lg p-2">
-              <Image
-                src="/images/logo_cosors.png"
-                alt="COS&ORS TECNICS S.L. - Rehabilitación de Fachadas"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-            <div className="hidden sm:block">
-              <span className="font-bold text-xl text-gray-900">COS&ORS TECNICS</span>
-              <div className="text-xs text-corporate-red font-medium">REHABILITACIÓN DE FACHADAS</div>
-            </div>
+          <Link href="/" className="flex items-center space-x-2 py-3" onClick={handleHomeClick}>
+            {/* Logo */}
+            <img
+              src="/images/banner_cosors.svg"
+              alt="Logo Cos & Ors"
+              className="h-16 w-auto transition-all duration-300 my-0.5"
+            />
           </Link>
 
           {/* Desktop Navigation */}

@@ -114,8 +114,8 @@ export default function HomePage() {
       <GallerySection />
 
       {/* CTA Section */}
-      <section className="section-padding bg-corporate-red relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-coral-600 to-coral-700" />
+      <section className="section-padding bg-corporate-red relative overflow-hidden m-8 md:m-24 rounded-2xl">
+        <div className="absolute inset-0 bg-gradient-to-r from-coral-600 to-coral-700 rounded-2xl" />
         <div className="container-custom text-center relative z-10">
           <div className="max-w-3xl mx-auto space-y-8 fade-in">
             <h2 className="text-white">¿Necesitas reformar tu fachada?</h2>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "Especialistas en reformas de fachadas en Pineda de Mar, Barcelona. Profesionales con experiencia en rehabilitación y mantenimiento de fachadas.",
   icons: {
-    icon: "images/ico_cosors.ico", // Path to your favicon
+    icon: "images/logo.ico", // Path to your favicon
   },
   keywords: "reformas fachadas, Pineda de Mar, Barcelona, rehabilitación fachadas, mantenimiento fachadas",
   authors: [{ name: "COS & ORS TECNICS S.L." }],
